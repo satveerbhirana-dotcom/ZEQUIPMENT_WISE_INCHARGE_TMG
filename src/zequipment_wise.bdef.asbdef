@@ -1,0 +1,26 @@
+managed implementation in class zbp_equipment_wise unique;
+strict ( 2 );
+
+define behavior for ZEquipment_Wise //alias <alias_name>
+persistent table zequipment_tmg
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+//  field ( readonly ) SrNo;
+
+
+mapping for zequipment_tmg
+{
+  SrNo = sr_no;
+  InchargeName = incharge_name;
+  Department = department;
+  ContactNumber = contact_no;
+  Emailid    = email_id;
+
+
+}
+}

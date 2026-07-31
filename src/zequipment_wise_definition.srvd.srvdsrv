@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition'
+define service ZEquipment_Wise_definition {
+  expose ZEquipment_Wise;
+}
